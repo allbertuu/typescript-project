@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+![GitHub repo size](https://img.shields.io/github/repo-size/allbertuu/typescript-project?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/allbertuu/typescript-project?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/allbertuu/typescript-project?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/allbertuu/typescript-project?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/allbertuu/typescript-project?style=for-the-badge)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Delta station 👨🏼‍✈️
 
-## Available Scripts
+This project was made to test my skills in Typescript. All of this code, from the initial idea to the execution of it, was made by me.
 
-In the project directory, you can run:
+## Table of contents
 
-### `yarn start`
+- [Overview](#overview)
+  - [The project](#the-project-)
+  - [Screenshot](#screenshot-)
+  - [Links](#links-)
+- [My process](#my-process-)
+  - [Built with](#built-with-)
+  - [What I learned](#what-i-learned-)
+  - [Continued development](#continued-development-)
+  - [Useful resources](#useful-resources-)
+- [Author](#author-%EF%B8%8F)
+- [Acknowledgments](#acknowledgments-)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### The project 🚀
 
-### `yarn test`
+You are a spaceship pilot who is looking for a new mission. To do this, you go to the delta station to speak with the general commander.
+This minigame was conceived in the mechanics of the RPG game created in 2015, Undertale. That is, there is interactivity in the player's responses that lead to the different responses from the game in a dynamic way.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> All the spaceships data is persistent. It means all information about them is saved, like if it is on a mission, who its crew is, etc until the user reloads the page.
 
-### `yarn build`
+### Screenshot 📷
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Main image of the website](./screenshot.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My process 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with ⚙
 
-### `yarn eject`
+- Semantic HTML5 markup
+- Typescript
+- Flexbox
+- [React](https://reactjs.org/) - JS library
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### What I learned 📚
+ 
+#### JavaScript
+- Creating a modal with pure javascript
+- Creating a custom adjust price with javascript function
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Continued development 🎯
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Refine my knowledge of Javascript types and master Typescript
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author 🙎🏻‍♂️
 
-## Learn More
+- Website - [Alberto Albuquerque](https://portfolio-allbertuu.vercel.app/)
+- Frontend Mentor - [@allbertuu](https://www.frontendmentor.io/profile/allbertuu)
+- LinkedIn - [Alberto Albuquerque](https://www.linkedin.com/in/albertov-albuquerque/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Back to the 🔝](#delta-station-)
