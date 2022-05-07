@@ -11,11 +11,11 @@ function App() {
   }
 
   const deltaStation: Spaceship[] = [{
-    name: 'Doo',
-    pilot: 'Alberto',
+    name: 'The First One',
+    pilot: 'Alberto, The Creator',
     crewLimit: 0,
     crew: [],
-    inMission: false
+    inMission: true
   }];
 
   function checkInputs(name: string, pilot: string) {
