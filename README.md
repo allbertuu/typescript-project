@@ -28,6 +28,7 @@ This project was made to test my skills in Typescript. All of this code, from th
 
 You are a spaceship pilot who is looking for a new mission. To do this, you go to the delta station to speak with the general commander.
 This minigame was conceived in the mechanics of the RPG game created in 2015, Undertale. That is, there is interactivity in the player's responses that lead to the different responses from the game in a dynamic way.
+Try to discover them! 🔥
 
 > All the spaceships data is persistent. It means all information about them is saved, like if it is on a mission, who its crew is, etc until the user reloads the page.
 
