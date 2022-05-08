@@ -6,10 +6,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 button {
   font-family: inherit;
+  padding: 0 .5rem;
 }
 
 footer {
