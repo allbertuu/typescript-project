@@ -1,5 +1,6 @@
 .container {
   height: 100vh;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -9,4 +10,20 @@
 
 button {
   font-family: inherit;
+}
+
+footer {
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  color: brown;
+}
+
+a {
+  color: rgb(25, 96, 201);
 }
