@@ -89,76 +89,76 @@ function getSpaceshipOccupation(spaceship: Spaceship) {
   }
 }
 
-function continueMission(spaceship: Spaceship) {
+// function continueMission(spaceship: Spaceship) {
 
-  const spaceshipOccupation = getSpaceshipOccupation(spaceship);
+//   const spaceshipOccupation = getSpaceshipOccupation(spaceship);
 
-  if (spaceshipOccupation === "Not Enough") {
-    alert('A espaçonave precisa estar com um 1/3 do limite preenchido, piloto.\nPor favor adicione os novos tripulantes à na lista. 👨🏼‍✈️');
-    const crewMember = prompt('Certo. Mas quem será? 👨🏼‍✈️', 4);
-    spaceship.crew.push(crewMember);
-    const missingCrew = spaceship.crewLimit - spaceship.crew.length;
-    while (missingCrew !== 0) {
-      alert(`Ainda faltam ${missingCrew} tripulante(s) para o limite mínimo de tripulantes na nave, piloto. 👨🏼‍✈️`);
-      const crewMember = prompt('Mais quem? 👨🏼‍✈️', 4);
-      spaceship.crew.push(crewMember);
-    }
-    continueMission(spaceship);
+//   if (spaceshipOccupation === "Not Enough") {
+//     alert('A espaçonave precisa estar com um 1/3 do limite preenchido, piloto.\nPor favor adicione os novos tripulantes à na lista. 👨🏼‍✈️');
+//     const crewMember = prompt('Certo. Mas quem será? 👨🏼‍✈️', 4);
+//     spaceship.crew.push(crewMember);
+//     const missingCrew = spaceship.crewLimit - spaceship.crew.length;
+//     while (missingCrew !== 0) {
+//       alert(`Ainda faltam ${missingCrew} tripulante(s) para o limite mínimo de tripulantes na nave, piloto. 👨🏼‍✈️`);
+//       const crewMember = prompt('Mais quem? 👨🏼‍✈️', 4);
+//       spaceship.crew.push(crewMember);
+//     }
+//     continueMission(spaceship);
 
-  } else if (spaceshipOccupation === "Free") {
-    const answer = Number(prompt('A espaçonave alcançou o limite mínimo, e portanto há espaço livre, piloto.\nDeseja ir logo ou irá levar mais alguém? 👨🏼‍✈️\n\n1 - Vamos! Estou com pressa.\n2 - Oops! Esqueci de uma pessoa!'));
-    // adicionar mais tripulantes OU iniciar missão
-    if (answer === 1) {
-      startMission(spaceship);
-    }
-    else if (answer === 2) {
+//   } else if (spaceshipOccupation === "Free") {
+//     const answer = Number(prompt('A espaçonave alcançou o limite mínimo, e portanto há espaço livre, piloto.\nDeseja ir logo ou irá levar mais alguém? 👨🏼‍✈️\n\n1 - Vamos! Estou com pressa.\n2 - Oops! Esqueci de uma pessoa!'));
+//     // adicionar mais tripulantes OU iniciar missão
+//     if (answer === 1) {
+//       startMission(spaceship);
+//     }
+//     else if (answer === 2) {
 
-    }
-    else {
-      alert('Não entendi, piloto. Irei repetir. 👨🏼‍✈️');
-      continueMission(spaceship);
-    }
+//     }
+//     else {
+//       alert('Não entendi, piloto. Irei repetir. 👨🏼‍✈️');
+//       continueMission(spaceship);
+//     }
 
-  } else if (spaceshipOccupation === "Full") {
-    alert('A espaçonave já está lotada, piloto. Vamos logo. 👨🏼‍✈️');
-    startMission(spaceship);
-  }
+//   } else if (spaceshipOccupation === "Full") {
+//     alert('A espaçonave já está lotada, piloto. Vamos logo. 👨🏼‍✈️');
+//     startMission(spaceship);
+//   }
 
-  else {
-    alert('Isso não deveria acontecer... Reporte isso ao criador do game. 👨🏼‍✈️\n\nO LinkedIn dele está na página inicial! ❤');
-    return;
-  }
+//   else {
+//     alert('Isso não deveria acontecer... Reporte isso ao criador do game. 👨🏼‍✈️\n\nO LinkedIn dele está na página inicial! ❤');
+//     return;
+//   }
 
-  const isAlone = Number(prompt('Tudo certo, piloto. Você deseja levar mais alguém com você? 👨🏼‍✈️\n\n1 - Sim ✅\n2 - Não ❌'));
+//   const isAlone = Number(prompt('Tudo certo, piloto. Você deseja levar mais alguém com você? 👨🏼‍✈️\n\n1 - Sim ✅\n2 - Não ❌'));
 
-  // Verificar se o piloto irá acompanhado
-  // if (isAlone === 1) {  // Sim
-  //   else { // pode entrar na tripulação
-  //     const crewMember = String(prompt('Certo. Quem? 👨🏼‍✈️')).trim();
-  //     spaceship.crew.push(crewMember);
-  //     while (spaceship.crew.length < spaceship.crewLimit) { // enquanto ainda há espaço na tripulação, adiciona-o
-  //       const answer = Number(prompt('Mais alguém? 👨🏼‍✈️\n\n1 - Sim ✅\n2 - Não ❌'));
-  //       if (answer === 1) {
-  //         const crewMember = String(prompt('Certo. Mais quem? 👨🏼‍✈️')).trim();
-  //         spaceship.crew.push(crewMember);
-  //       }
-  //       else if (answer === 2) {
-  //         break;
-  //       }
-  //       else {
-  //         alert('Não entendi, piloto. Irei repetir. 👨🏼‍✈️');
-  //       }
-  //     }
+//   // Verificar se o piloto irá acompanhado
+//   // if (isAlone === 1) {  // Sim
+//   //   else { // pode entrar na tripulação
+//   //     const crewMember = String(prompt('Certo. Quem? 👨🏼‍✈️')).trim();
+//   //     spaceship.crew.push(crewMember);
+//   //     while (spaceship.crew.length < spaceship.crewLimit) { // enquanto ainda há espaço na tripulação, adiciona-o
+//   //       const answer = Number(prompt('Mais alguém? 👨🏼‍✈️\n\n1 - Sim ✅\n2 - Não ❌'));
+//   //       if (answer === 1) {
+//   //         const crewMember = String(prompt('Certo. Mais quem? 👨🏼‍✈️')).trim();
+//   //         spaceship.crew.push(crewMember);
+//   //       }
+//   //       else if (answer === 2) {
+//   //         break;
+//   //       }
+//   //       else {
+//   //         alert('Não entendi, piloto. Irei repetir. 👨🏼‍✈️');
+//   //       }
+//   //     }
 
-  //   }
-  //   startMission(spaceship);
-  // }
+//   //   }
+//   //   startMission(spaceship);
+//   // }
 
-  // else { // Não, irá sozinho
-  //   startMission(spaceship);
-  // }
-  spaceship.inMission = true;
-}
+//   // else { // Não, irá sozinho
+//   //   startMission(spaceship);
+//   // }
+//   spaceship.inMission = true;
+// }
 
 function verifySpaceshipIsInMission(spaceship: Spaceship) {
   if (spaceship.inMission) { // Sim
@@ -167,14 +167,11 @@ function verifySpaceshipIsInMission(spaceship: Spaceship) {
   }
   else { // Não
     alert('Excelente! Esta nave está totalmente livre, piloto. 👨🏼‍✈️✅');
-    continueMission(spaceship);
+    // continueMission(spaceship);
   }
 }
 
 function findSpaceship(targetSpaceship: Spaceship): boolean {
-  // recebe um objeto
-  // loop por cada objeto do deltaStation (array de objetos), verificando cada nome de cada um se é igual ao objeto recebido
-  // retorna sim ou não se achou um match
   let found = false;
 
   deltaStation.forEach((spaceship) => {
@@ -190,7 +187,7 @@ function verifySpaceshipIsAlreadyInDeltaStation(spaceship: Spaceship) {
     verifySpaceshipIsInMission(spaceship);
   } else { // Não
     deltaStation.push(spaceship);
-    continueMission(spaceship);
+    // continueMission(spaceship);
   }
 }
 
