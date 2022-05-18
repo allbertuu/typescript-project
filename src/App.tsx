@@ -5,12 +5,11 @@ function App() {
 
   return (
     <div className='container'>
-      <h1>Bem-vindo, piloto 👨🏼‍✈️</h1>
-      <button onClick={start}>Iniciar!</button>
-      <footer>
-        <p>Para eventuais problemas, ou se quiser me conhecer :)</p>
+      <h1>Em breve!</h1>
+      <h2>MELHOR e mais INTELIGENTE!</h2>
+      <blockquote>
         <a href="https://www.linkedin.com/albertov-albuquerque">LinkedIn do criador</a>
-      </footer>
+      </blockquote>
     </div>
   );
 }
